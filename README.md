@@ -1,4 +1,4 @@
-# Silicon-strip laboratory data stewardship
+# Silicon-strip laboratory data workflow
 
 A Python case study in turning detector-laboratory exports into traceable, validated results and structured electronic lab notebook records.
 
