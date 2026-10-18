@@ -1,0 +1,2 @@
+# Optional plotting only. The core workflow needs no third-party packages.
+reportlab>=4,<5

@@ -1,0 +1,49 @@
+{
+  "dataset_id": "SILICON-STRIP-LAB-001",
+  "title": "Silicon-strip detector analysis",
+  "data_origin": "laboratory measurement exports and a documented notebook transcription",
+  "acquisition_date": null,
+  "report_date": "2024-06-14",
+  "instrument_context": {
+    "model": "Educational Alibava System",
+    "readout_chip": "BEETLE",
+    "sensor_thickness_um": 300,
+    "strip_count": 128,
+    "source": "Laboratory manual and report; per-run settings unavailable"
+  },
+  "data_license": null,
+  "software_license": "MIT",
+  "scope": "Aggregate results, analysis code and metadata",
+  "missing_metadata": [
+    "per-run acquisition dates",
+    "instrument serial number",
+    "acquisition operator for each export",
+    "conversion settings and version",
+    "measurement uncertainties",
+    "separate measurement-data reuse license"
+  ],
+  "calibration_energy_factor_ev_per_electron_hole_pair": 3.6,
+  "index_conventions": {
+    "channel_index": "zero-based matrix column or row index",
+    "channel_label": "historical filename label, not assumed identical to channel_index convention",
+    "source_line": "one-based physical line of the selected input",
+    "source_column": "one-based physical column of the selected input",
+    "export_bin_center": "original floating-point histogram coordinate, not silently converted to an event or channel ID"
+  },
+  "method_status": {
+    "source_cluster_sum": "manual-consistent ADC reduction",
+    "historical_first_channel_mean": "preserved historical reduction",
+    "energy_spectrum": "optional scientific validation outside current ADC-level curation scope",
+    "laser_cce_fit": "optional extension outside current project scope",
+    "common_mode_corrected_noise": "recomputed from selected event matrix; separate from historical noise export"
+  },
+  "reported_calibration_bias_voltage_v": 100,
+  "reported_bias_caveat": "100 V stated in updated report, not verified in per-file acquisition records",
+  "data_profile": "Aggregate statistics from selected event and cluster excerpts",
+  "full_run_statistics_reproduced": false,
+  "provided_pedestal_events_per_channel": 100,
+  "provided_source_clusters_per_voltage": 200,
+  "provided_large_source_clusters": 2000,
+  "source_measurements_distributed": false,
+  "attribution_reference": "README.md#attribution"
+}

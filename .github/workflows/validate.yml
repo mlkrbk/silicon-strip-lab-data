@@ -1,0 +1,18 @@
+name: Validate laboratory data curation
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate published summary results
+        run: python scripts/validate_project.py
+      - name: Run semantic tests
+        run: python -m unittest discover -s tests -v
+      - name: Verify preservation transfer and restore
+        run: python scripts/preserve_package.py --self-test
+      - name: Check repository hygiene
+        run: python scripts/check_repository.py

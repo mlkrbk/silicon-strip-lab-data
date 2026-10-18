@@ -1,0 +1,647 @@
+{
+  "dataset_id": "SILICON-STRIP-LAB-001",
+  "scope": "Source identities and selection records for silicon-strip detector analysis",
+  "notebooks": [
+    {
+      "id": "NB-001",
+      "sha256": "cf0614649a387dd6e3bf9c530e5f7700c79c47b6b190bf2ba8922838f89290b0",
+      "role": "report-matched historical analysis"
+    },
+    {
+      "id": "NB-002",
+      "sha256": "8a5f228caed41c06334f175df2d0dd59a2bd75027618d6e038b69517cd8ec334",
+      "role": "report-matched historical analysis"
+    },
+    {
+      "id": "NB-003",
+      "sha256": "300721ec1a740150e771f880f535da9445f87a5f2382a3a16088acdf79cc1758",
+      "role": "comparison branch; not selected as primary"
+    },
+    {
+      "id": "NB-004",
+      "sha256": "6b7416d05bf47f8030caf19a63c31a335ff7dc851e4eeaeeb08beb43e9862f46",
+      "role": "comparison branch; not selected as primary"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "SRC-001",
+      "path": "data/source/pedestal/pedestal_event_samples_sample.txt",
+      "kind": "pedestal_matrix",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 2-5; report page 8, Figure 5, pedestal panel",
+      "sha256": "f90c29b3a7a5b29c145ec96738e0ce707135d6d22009da1922fad32132df636e",
+      "bytes": 140800,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "988c014e36a9882ab34de6a9cd92b3107cf67ec81e6400a5a063f7c7f3676ed8",
+      "sampling": {
+        "method": "first 100 event columns retained for every one of 128 channels",
+        "sampling_unit": "event columns",
+        "provided_events_per_channel": 100,
+        "parent_events_per_channel": 1000,
+        "bias_note": "Deterministic excerpt for workflow demonstration; not a randomized or statistically representative sample."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-002",
+      "path": "data/source/pedestal/common_mode_export.txt",
+      "kind": "common_mode_export",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 6-9; report page 8, Figure 4",
+      "sha256": "bee6bd103124a3d112b5515843eaa2b53ee938bce3e6a997b0960bb62d635a64",
+      "bytes": 18644,
+      "public_data_profile": "complete_small_export",
+      "parent_sha256": "bee6bd103124a3d112b5515843eaa2b53ee938bce3e6a997b0960bb62d635a64",
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-003",
+      "path": "data/source/pedestal/channel_noise_export.txt",
+      "kind": "noise_export",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 10-12; report page 8, Figure 5, noise panel; case-insensitive filename resolution",
+      "sha256": "aa345289cac56c26132d08d872ad07cd5511f77a98d81c9162e53840991ee658",
+      "bytes": 2511,
+      "public_data_profile": "complete_small_export",
+      "parent_sha256": "aa345289cac56c26132d08d872ad07cd5511f77a98d81c9162e53840991ee658",
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-004",
+      "path": "data/source/calibration/channel_003_charge_response.txt",
+      "kind": "calibration",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 15-20; report page 9, Figures 7-8",
+      "channel": 3,
+      "bias_condition": "100 V according to updated report section 4.1; per-file acquisition metadata unavailable",
+      "sha256": "77295a106f3ffee2093f6fc33e93e28245c28584800b9b9767dd65998555946e",
+      "bytes": 6229,
+      "reported_bias_voltage_v": 100,
+      "public_data_profile": "complete_small_export",
+      "parent_sha256": "77295a106f3ffee2093f6fc33e93e28245c28584800b9b9767dd65998555946e",
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-005",
+      "path": "data/source/calibration/channel_029_charge_response.txt",
+      "kind": "calibration",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 15-20; report page 9, Figures 7-8",
+      "channel": 29,
+      "bias_condition": "100 V according to updated report section 4.1; per-file acquisition metadata unavailable",
+      "sha256": "f269633cac12606a67f0819e3fcd5c76915fba511aa998129b604e37c6daeb10",
+      "bytes": 6228,
+      "reported_bias_voltage_v": 100,
+      "public_data_profile": "complete_small_export",
+      "parent_sha256": "f269633cac12606a67f0819e3fcd5c76915fba511aa998129b604e37c6daeb10",
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-006",
+      "path": "data/source/calibration/channel_065_charge_response.txt",
+      "kind": "calibration",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 15-20; report page 9, Figures 7-8",
+      "channel": 65,
+      "bias_condition": "100 V according to updated report section 4.1; per-file acquisition metadata unavailable",
+      "sha256": "c20c0b3e25947b8a344390886b07a2ea2a77ea3e544168dd02c6ad47e9dbda65",
+      "bytes": 6230,
+      "reported_bias_voltage_v": 100,
+      "public_data_profile": "complete_small_export",
+      "parent_sha256": "c20c0b3e25947b8a344390886b07a2ea2a77ea3e544168dd02c6ad47e9dbda65",
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-007",
+      "path": "data/source/calibration/channel_083_charge_response.txt",
+      "kind": "calibration",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 15-20; report page 9, Figures 7-8",
+      "channel": 83,
+      "bias_condition": "100 V according to updated report section 4.1; per-file acquisition metadata unavailable",
+      "sha256": "20826697cd44d8f73979f876a07d84e1e1ffa2b4b0dba89be28b4e27c6fc4f6d",
+      "bytes": 6229,
+      "reported_bias_voltage_v": 100,
+      "public_data_profile": "complete_small_export",
+      "parent_sha256": "20826697cd44d8f73979f876a07d84e1e1ffa2b4b0dba89be28b4e27c6fc4f6d",
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-008",
+      "path": "data/source/calibration/channel_107_charge_response.txt",
+      "kind": "calibration",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 15-20; report page 9, Figures 7-8",
+      "channel": 107,
+      "bias_condition": "100 V according to updated report section 4.1; per-file acquisition metadata unavailable",
+      "sha256": "0e2ccb85151d81790debf8cab5d64946631c6a6ffcfbef339ea0309a8bed408d",
+      "bytes": 6229,
+      "reported_bias_voltage_v": 100,
+      "public_data_profile": "complete_small_export",
+      "parent_sha256": "0e2ccb85151d81790debf8cab5d64946631c6a6ffcfbef339ea0309a8bed408d",
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-009",
+      "path": "data/source/laser/synchronization_delay_scan.txt",
+      "kind": "laser_delay",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 27-28; updated report page 10, Figure 10",
+      "sha256": "20054c1c46a1ba760485ef7d2f79bae6381a534d37aacd1b281474f04f7a0f97",
+      "bytes": 2069,
+      "public_data_profile": "complete_small_export",
+      "parent_sha256": "20054c1c46a1ba760485ef7d2f79bae6381a534d37aacd1b281474f04f7a0f97",
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-010",
+      "path": "data/source/laser/position_scan_signal_matrix.txt",
+      "kind": "laser_matrix",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 29-35; saved channel-44 list matches all 35 values; updated report page 11, Figure 11",
+      "sha256": "f08d1da2bd3f67b916b8d1b45665657a025c46ded1170346a4e66a5be4e1cc8d",
+      "bytes": 43197,
+      "public_data_profile": "complete_small_export",
+      "parent_sha256": "f08d1da2bd3f67b916b8d1b45665657a025c46ded1170346a4e66a5be4e1cc8d",
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-032",
+      "path": "data/source/source_voltage/bias_000_cluster_signals_sample.txt",
+      "kind": "source_voltage",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 45-48; updated report page 13, Figures 14-15; relocated export candidate",
+      "bias_voltage_v": 0,
+      "sha256": "5d79b81fa17fd52542e025a649c4d163b2ddfabd3c6033d8378aae4c1c7fe182",
+      "bytes": 2110,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "5eb3d90dd2ec11a8916b65b33f11e3444a32f02c6c74f3f5ea6c76e86af74296",
+      "sampling": {
+        "method": "first 200 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 200,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-033",
+      "path": "data/source/source_voltage/bias_010_cluster_signals_sample.txt",
+      "kind": "source_voltage",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 45-48; updated report page 13, Figures 14-15; relocated export candidate",
+      "bias_voltage_v": 10,
+      "sha256": "730c7e6acd07b4d6efa5656d2e65fc1236b97d0423c3644d18e3fb20ddd4eb5d",
+      "bytes": 2817,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "cb7d1b6c1bc1ab49adb4a0b0a72ea4770bf27ff1fe7e948ecf8a2db989065a9b",
+      "sampling": {
+        "method": "first 200 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 200,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-034",
+      "path": "data/source/source_voltage/bias_020_cluster_signals_sample.txt",
+      "kind": "source_voltage",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 45-48; updated report page 13, Figures 14-15; relocated export candidate",
+      "bias_voltage_v": 20,
+      "sha256": "fc510d4cd048cc693f32fc210c5f56d13935806215f8b1fe511c26642e0992e0",
+      "bytes": 3143,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "160202a64f01e4bb7cb4525d200be683e38eaf95ff75d9bb62eeaef65b285385",
+      "sampling": {
+        "method": "first 200 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 200,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-035",
+      "path": "data/source/source_voltage/bias_030_cluster_signals_sample.txt",
+      "kind": "source_voltage",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 45-48; updated report page 13, Figures 14-15; relocated export candidate",
+      "bias_voltage_v": 30,
+      "sha256": "7d214cf7460db411d231a939049042857501c914ec0e55faf3c507dcf92cf1ad",
+      "bytes": 3421,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "18420950dcad7150a278bab63632d44ad1ea2c6a1ee25c674a992e375bc2d28a",
+      "sampling": {
+        "method": "first 200 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 200,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-036",
+      "path": "data/source/source_voltage/bias_040_cluster_signals_sample.txt",
+      "kind": "source_voltage",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 45-48; updated report page 13, Figures 14-15; relocated export candidate",
+      "bias_voltage_v": 40,
+      "sha256": "f63fd3d8952b541fd01ea281cbf825102684a6a521d13150a0a5c252431c7895",
+      "bytes": 3532,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "15d3c12edbe16e53da01cb6e63cda6cb58e1bb56f5a83eabf36c803a1308ccc9",
+      "sampling": {
+        "method": "first 200 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 200,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-037",
+      "path": "data/source/source_voltage/bias_050_cluster_signals_sample.txt",
+      "kind": "source_voltage",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 45-48; updated report page 13, Figures 14-15; relocated export candidate",
+      "bias_voltage_v": 50,
+      "sha256": "8ff688ef9293ff2a543c32bf8ad90bd2a6e6ec0408aae1909858a3bc7e0b5b3c",
+      "bytes": 3831,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "a6fa1b7521632a7e32655344ad1c3fff071988377292424b0cee2c970880785c",
+      "sampling": {
+        "method": "first 200 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 200,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-038",
+      "path": "data/source/source_voltage/bias_060_cluster_signals_sample.txt",
+      "kind": "source_voltage",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 45-48; updated report page 13, Figures 14-15; relocated export candidate",
+      "bias_voltage_v": 60,
+      "sha256": "72a23272bb67784ecd463a63644bd953c5444d3cf0ebe32b4be56cd7374c5c10",
+      "bytes": 3969,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "413da831531673d1a9e7b1113b2ba8ffc8c303b07dcbaf718a48a5c566b46dc2",
+      "sampling": {
+        "method": "first 200 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 200,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-039",
+      "path": "data/source/source_voltage/bias_070_cluster_signals_sample.txt",
+      "kind": "source_voltage",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 45-48; updated report page 13, Figures 14-15; relocated export candidate",
+      "bias_voltage_v": 70,
+      "sha256": "7487ae5c971418b8650b65612b1379d36bdd600c422585c73ae00f64dd0f815b",
+      "bytes": 4033,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "6057f0bccc49dbcfb3be5d418395bdabef29bbbc6d58776792a5dfdf1f493c62",
+      "sampling": {
+        "method": "first 200 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 200,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-040",
+      "path": "data/source/source_voltage/bias_080_cluster_signals_sample.txt",
+      "kind": "source_voltage",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 45-48; updated report page 13, Figures 14-15; relocated export candidate",
+      "bias_voltage_v": 80,
+      "sha256": "22d944f5a8ed1858546b5ca3c2d8bdcc5f6425d8eb1dd75cd6c8e6a187674bc0",
+      "bytes": 4306,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "58d05e755ed9cf651dae941b83d96a4b78d59e137d94540adf78c4a6972afb8e",
+      "sampling": {
+        "method": "first 200 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 200,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-041",
+      "path": "data/source/source_voltage/bias_090_cluster_signals_sample.txt",
+      "kind": "source_voltage",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 45-48; updated report page 13, Figures 14-15; relocated export candidate",
+      "bias_voltage_v": 90,
+      "sha256": "c27554f0eb4a528f912a7eef914538ba0cb5ae3893d1fa9bb25336c1e78cd797",
+      "bytes": 4168,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "b0c0345f3f3b960969014f4e8e44392fd23f473896a626c3df54c0474b39ed4b",
+      "sampling": {
+        "method": "first 200 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 200,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-042",
+      "path": "data/source/source_voltage/bias_100_cluster_signals_sample.txt",
+      "kind": "source_voltage",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 45-48; updated report page 13, Figures 14-15; relocated export candidate",
+      "bias_voltage_v": 100,
+      "sha256": "1823f91d944d5076ebd707e929d7b4d93f84bf3be018a154996f8f1b475f928e",
+      "bytes": 4196,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "f5e2051e651fa51bf3d13d0d517cc86a15448b59d9db64acb64eba702b4e9b44",
+      "sampling": {
+        "method": "first 200 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 200,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-043",
+      "path": "data/source/source_voltage/bias_110_cluster_signals_sample.txt",
+      "kind": "source_voltage",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 45-48; updated report page 13, Figures 14-15; relocated export candidate",
+      "bias_voltage_v": 110,
+      "sha256": "6f54deb258a8eeab389118fcfb764eeff04ab0adbbf0823553b318d48d759d3e",
+      "bytes": 4103,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "7e390bb3e94a0aed3ba9b00e60c74a66d89953e6c18462ad4dd8690132211d90",
+      "sampling": {
+        "method": "first 200 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 200,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-044",
+      "path": "data/source/source_voltage/bias_120_cluster_signals_sample.txt",
+      "kind": "source_voltage",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 45-48; updated report page 13, Figures 14-15; relocated export candidate",
+      "bias_voltage_v": 120,
+      "sha256": "6c08760b73dabbe26b3c47324edc6252b624cbc0bfc31279891a632f0af863d9",
+      "bytes": 4599,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "bb8e2394776972e5e670d1e6ad8c5c9bacaf94324d0cf14acdf9a00afcd36f6d",
+      "sampling": {
+        "method": "first 200 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 200,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-045",
+      "path": "data/source/source_voltage/bias_130_cluster_signals_sample.txt",
+      "kind": "source_voltage",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 45-48; updated report page 13, Figures 14-15; relocated export candidate",
+      "bias_voltage_v": 130,
+      "sha256": "21370efbc7abed01c23d3d735b150f451fa88ac3115e90ae25e6810c4aac5eda",
+      "bytes": 4388,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "d77bf9b658a4b3aeab4d6be4dfd075c1c2a84d9e7bb8abb292d655d01f232369",
+      "sampling": {
+        "method": "first 200 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 200,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-046",
+      "path": "data/source/source_voltage/bias_140_cluster_signals_sample.txt",
+      "kind": "source_voltage",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 45-48; updated report page 13, Figures 14-15; relocated export candidate",
+      "bias_voltage_v": 140,
+      "sha256": "7b498b5adf5c97e82b44c1b17caa4e6db169bf4220d33bdd53400a11d9292250",
+      "bytes": 4422,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "0fd9eee7900b88444bbedeb482df91a18cd683e36918a1695f32fd9736788865",
+      "sampling": {
+        "method": "first 200 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 200,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-047",
+      "path": "data/source/source_voltage/bias_150_cluster_signals_sample.txt",
+      "kind": "source_voltage",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 45-48; updated report page 13, Figures 14-15; relocated export candidate",
+      "bias_voltage_v": 150,
+      "sha256": "20e1e2b08c9360a7ea2dea0ff7d92b02ff5d022de1eae95d877dc06e954aea08",
+      "bytes": 4384,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "a7236e3516b36c3766191711a7f30b3e5c39f580dcef7b551c8dd0a5faff4958",
+      "sampling": {
+        "method": "first 200 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 200,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-048",
+      "path": "data/source/source_voltage/bias_160_cluster_signals_sample.txt",
+      "kind": "source_voltage",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 45-48; updated report page 13, Figures 14-15; relocated export candidate",
+      "bias_voltage_v": 160,
+      "sha256": "793062da214261501094121a4b5f0c18f7785f6bfad13597fd20fa9a93518075",
+      "bytes": 4462,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "2caf3cd97a0b2f18fb3a58afb0fdf32f9df506f355a0a66d07e6010f7e2067b3",
+      "sampling": {
+        "method": "first 200 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 200,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-049",
+      "path": "data/source/source_voltage/bias_170_cluster_signals_sample.txt",
+      "kind": "source_voltage",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 45-48; updated report page 13, Figures 14-15; relocated export candidate",
+      "bias_voltage_v": 170,
+      "sha256": "f27fece2960c1db86ca146a89d687a4b3048ae2699a4c83de8144ed91374485c",
+      "bytes": 4306,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "3f55a08a5b981165d246918f02f9442ccfeb0c1a69df492f6e4d4615426679ad",
+      "sampling": {
+        "method": "first 200 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 200,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-050",
+      "path": "data/source/source_voltage/bias_180_cluster_signals_sample.txt",
+      "kind": "source_voltage",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 45-48; updated report page 13, Figures 14-15; relocated export candidate",
+      "bias_voltage_v": 180,
+      "sha256": "2eb3ff4bcd29cbe811d000a3812b0b4c8b401f309c43be7a3c788902f3b50882",
+      "bytes": 4158,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "c6d8fd3b8edb8ecdee9fd16c87f094212b87e223114dc86a55de4b87dcd816c9",
+      "sampling": {
+        "method": "first 200 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 200,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-051",
+      "path": "data/source/source_voltage/bias_190_cluster_signals_sample.txt",
+      "kind": "source_voltage",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 45-48; updated report page 13, Figures 14-15; relocated export candidate",
+      "bias_voltage_v": 190,
+      "sha256": "d8499a5f92328d5217df14b6e0d3a399aeb4155cdb00f1f5a0a3b4bd899a8138",
+      "bytes": 4234,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "87cc40f26e33dd94052075469bd572ec3c70b615576b0c47a7767f1aa8e1d205",
+      "sampling": {
+        "method": "first 200 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 200,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-052",
+      "path": "data/source/source_voltage/bias_200_cluster_signals_sample.txt",
+      "kind": "source_voltage",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 45-48; updated report page 13, Figures 14-15; relocated export candidate",
+      "bias_voltage_v": 200,
+      "sha256": "fd0d9cfcc47126b720784a2f015bc244780e3cfc4ee3dac995b97cd5762c54f9",
+      "bytes": 4278,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "698af48b5900b0758e1c51cf42e0587185d412f4a8a26787af800e842e2a1b4c",
+      "sampling": {
+        "method": "first 200 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 200,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-053",
+      "path": "data/source/large_source/channel_hit_counts.txt",
+      "kind": "hitmap",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 49-50; report pages 13-14, corresponding source-analysis plot (report caption numbering incomplete)",
+      "sha256": "2dfa382114664d7b17990cf7293749e9ca9b80dfd069f5ba0af44e7eaf33a5ea",
+      "bytes": 1661,
+      "public_data_profile": "complete_small_export",
+      "parent_sha256": "2dfa382114664d7b17990cf7293749e9ca9b80dfd069f5ba0af44e7eaf33a5ea",
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-054",
+      "path": "data/source/large_source/cluster_size_counts.txt",
+      "kind": "cluster_size",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 51-52; report pages 13-14, corresponding source-analysis plot (report caption numbering incomplete)",
+      "sha256": "44564350286e6ed88d0d5907a133c28d0e6c299b2b31886504fd7e6c1befaa30",
+      "bytes": 1244,
+      "public_data_profile": "complete_small_export",
+      "parent_sha256": "44564350286e6ed88d0d5907a133c28d0e6c299b2b31886504fd7e6c1befaa30",
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-055",
+      "path": "data/source/large_source/event_cluster_counts.txt",
+      "kind": "event_clusters",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 53-54; report pages 13-14, corresponding source-analysis plot (report caption numbering incomplete)",
+      "sha256": "554088eba31e2d883bc72c9666215829ec878323568cd10ea5e527fbb4f74345",
+      "bytes": 1228,
+      "public_data_profile": "complete_small_export",
+      "parent_sha256": "554088eba31e2d883bc72c9666215829ec878323568cd10ea5e527fbb4f74345",
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-056",
+      "path": "data/source/large_source/cluster_channel_signals_sample.txt",
+      "kind": "large_clusters",
+      "status": "withheld",
+      "selection_evidence": "NB-001 cells 55-59; report pages 13-14, corresponding source-analysis plot (report caption numbering incomplete)",
+      "sha256": "79825b36c21ea5bfe1b9c51884be5102ff23826678cd077cf0604013b8f68c48",
+      "bytes": 42179,
+      "public_data_profile": "deterministic_excerpt",
+      "parent_sha256": "38816dbf94c766dbddffd36e3c51410590e18bd5684b9e0356415d79d008c328",
+      "sampling": {
+        "method": "first 2000 complete cluster rows after the instrument header",
+        "sampling_unit": "clusters with all their channel signals retained",
+        "provided_clusters": 2000,
+        "bias_note": "Deterministic excerpt for workflow demonstration; sample means are not full-run estimates."
+      },
+      "availability": "local_only"
+    },
+    {
+      "id": "SRC-IV",
+      "path": "data/source/current_voltage_transcription.csv",
+      "kind": "current_voltage_transcription",
+      "status": "withheld",
+      "sha256": "f47c149d62efc445042a55efa007f295239db24bafa0bb16ee21c26bf1180c40",
+      "bytes": 488,
+      "selection_evidence": "NB-002 cell 0; exact pixel match to report page 7, Figure 3",
+      "provenance_level": "values transcribed in historical notebook, not recovered instrument export",
+      "public_data_profile": "complete_small_export",
+      "parent_sha256": "f47c149d62efc445042a55efa007f295239db24bafa0bb16ee21c26bf1180c40",
+      "availability": "local_only"
+    }
+  ],
+  "aliases": [
+    {
+      "role": "nominal_zero_bias_comparison",
+      "uses_source_id": "SRC-005",
+      "selection_evidence": "NB-001 cells 22-23; updated report page 10, Figure 9",
+      "issue": "Original zero-bias export is byte-identical to the channel-29 export; not independent measurements."
+    }
+  ],
+  "historical_input_identity": "Report-image matching verifies the historical analysis branch. Current selected exports are supported by references and numerical checks; historical byte identity is not independently established for every input.",
+  "full_run_statistics_reproduced": false,
+  "distribution": "metadata_only"
+}

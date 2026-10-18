@@ -1,0 +1,2 @@
+cluster_count,contributing_channel_count,mean_cluster_sum_adc,sample_standard_deviation_adc,standard_error_mean_adc,minimum_cluster_sum_adc,maximum_cluster_sum_adc,source_id
+2000,3061,92.83847161979536,48.895045129014136,1.0933264467139558,9.67080314961,579.3622992127999,SRC-056

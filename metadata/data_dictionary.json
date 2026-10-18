@@ -1,0 +1,37 @@
+{
+  "calibration_mean_response.csv": {
+    "level": "mean of five charge curves on their common grid",
+    "mean_signal_adc": "equal-weight arithmetic mean; uncertainty unavailable",
+    "channel_count": "five selected curves, including the channel-29 record with unresolved zero-bias alias"
+  },
+  "pedestal_channel_statistics.csv": {
+    "pedestal_adc": "mean of the 100 provided event samples for each channel",
+    "uncorrected_sample_noise_adc": "sample standard deviation using N-1",
+    "common_mode_corrected_sample_noise_adc": "sample standard deviation of residuals after pedestal and event common-mode subtraction, using N-1",
+    "event_count": "number of matrix columns, not inferred from export histogram bins"
+  },
+  "source_voltage_response.csv": {
+    "bias_voltage_v": "voltage parsed into selected manifest from original voltage-specific filenames",
+    "cluster_count": "number of observed cluster data rows, not acquisition-event count",
+    "contributing_channel_count": "number of all listed channel ADC entries",
+    "historical_mean_first_channel_adc": "mean of first listed ADC entry of each cluster, the report-matched historical reduction",
+    "mean_cluster_sum_adc": "mean of per-cluster sums of all contributing channel signals, following the manual",
+    "normalized_historical_mean_first_channel_adc": "(value-series minimum)/(series maximum-series minimum); relative signal, not absolute efficiency",
+    "normalized_mean_cluster_sum_adc": "same min-max transformation of mean cluster sums"
+  },
+  "large_source_adc_spectrum.csv": {
+    "lower_edge_adc": "lower edge of one of 150 equal-width bins over observed cluster-sum range",
+    "upper_edge_adc": "upper edge; bins are left-closed/right-open except final maximum included",
+    "count": "number of summed-ADC clusters in bin"
+  },
+  "large_source_signal_summary.csv": {
+    "cluster_count": "observed cluster rows, not number of acquisition events",
+    "mean_cluster_sum_adc": "arithmetic mean of per-cluster ADC sums",
+    "sample_standard_deviation_adc": "sample standard deviation with N-1",
+    "standard_error_mean_adc": "sample standard deviation divided by sqrt(cluster_count), conditional on treating clusters as independent; systematic uncertainty unassessed"
+  },
+  "large_source_observed_cluster_sizes.csv": {
+    "channel_count": "number of entries in each observed cluster row",
+    "count": "number of clusters with that many contributing channel entries"
+  }
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "path": "data/derived/calibration_mean_response.csv",
+    "rows": 255,
+    "columns": [
+      "injected_charge_electrons",
+      "equivalent_energy_kev",
+      "mean_signal_adc",
+      "channel_count",
+      "included_in_historical_fit"
+    ],
+    "sha256": "9c11b7221904b683ea879db0e91dcd786d7ce70e942ff7534092bd3f925c99eb"
+  },
+  {
+    "path": "data/derived/pedestal_channel_statistics.csv",
+    "rows": 128,
+    "columns": [
+      "channel_index",
+      "event_count",
+      "pedestal_adc",
+      "uncorrected_sample_noise_adc",
+      "common_mode_corrected_sample_noise_adc",
+      "source_id",
+      "source_line"
+    ],
+    "sha256": "9e68fbdf0ec074b7d452184fa6dcf18b8c5a31559643df8f97f8e97306e27ea6"
+  },
+  {
+    "path": "data/derived/source_voltage_response.csv",
+    "rows": 21,
+    "columns": [
+      "bias_voltage_v",
+      "cluster_count",
+      "contributing_channel_count",
+      "historical_mean_first_channel_adc",
+      "mean_cluster_sum_adc",
+      "source_id",
+      "normalized_historical_mean_first_channel_adc",
+      "normalized_mean_cluster_sum_adc"
+    ],
+    "sha256": "538b50d46609dadfb7709310e87458e226a2858adc802a2be0679172f9b55b81"
+  },
+  {
+    "path": "data/derived/large_source_adc_spectrum.csv",
+    "rows": 150,
+    "columns": [
+      "bin_index",
+      "lower_edge_adc",
+      "upper_edge_adc",
+      "count",
+      "source_id"
+    ],
+    "sha256": "1ced1ee8e88ad6edb6118e5b475c0e7111db87c35ca2693da2b37d7409355583"
+  },
+  {
+    "path": "data/derived/large_source_signal_summary.csv",
+    "rows": 1,
+    "columns": [
+      "cluster_count",
+      "contributing_channel_count",
+      "mean_cluster_sum_adc",
+      "sample_standard_deviation_adc",
+      "standard_error_mean_adc",
+      "minimum_cluster_sum_adc",
+      "maximum_cluster_sum_adc",
+      "source_id"
+    ],
+    "sha256": "85a024fb02952e5644b6b7af56125920281f52dcf738ffc74fd18866f614f64e"
+  },
+  {
+    "path": "data/derived/large_source_observed_cluster_sizes.csv",
+    "rows": 7,
+    "columns": [
+      "channel_count",
+      "count",
+      "source_id"
+    ],
+    "sha256": "b59d7b7124faa33ad5fcc641eeaa90a22341b11697bb96593b43be96041ab603"
+  }
+]

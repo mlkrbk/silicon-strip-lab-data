@@ -1,0 +1,32 @@
+{
+  "title": "Silicon-strip calibration summary",
+  "body": "Aggregate calibration response from silicon-strip detector analysis. The attached provenance manifest identifies the source exports, selection rules and checksums.",
+  "metadata": {
+    "extra_fields": {
+      "dataset_id": {
+        "type": "text",
+        "value": "SILICON-STRIP-LAB-001"
+      },
+      "acquisition_date_status": {
+        "type": "text",
+        "value": "unknown"
+      },
+      "scope": {
+        "type": "text",
+        "value": "public_summary_results"
+      },
+      "release_status": {
+        "type": "text",
+        "value": "selected_results_only"
+      },
+      "source_manifest": {
+        "type": "text",
+        "value": "metadata/source_manifest.json"
+      },
+      "review_status": {
+        "type": "text",
+        "value": "technical_draft"
+      }
+    }
+  }
+}

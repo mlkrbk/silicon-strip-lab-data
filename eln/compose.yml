@@ -1,0 +1,52 @@
+name: silicon-strip-eln-demo
+services:
+  mysql:
+    image: mysql:8.4@sha256:24989179f58856db763f418010c1169fecc944e3ec1ea7e921572d83eb070f70
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: elabftw
+      MYSQL_USER: elabftw
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - database:/var/lib/mysql
+    healthcheck:
+      test: [CMD-SHELL, 'mysqladmin ping -h 127.0.0.1 --silent']
+      interval: 5s
+      timeout: 3s
+      retries: 30
+  web:
+    image: elabftw/elabimg:6.0.8@sha256:883822677bcf24d11ca3ea31970885a9d92acf5b1ed06dafb222bc20f19eda9c
+    user: "1000:1000"
+    read_only: true
+    tmpfs:
+      - /run:mode=755,uid=1000,gid=1000,exec,nosuid,nodev,size=64m
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_NAME: elabftw
+      DB_USER: elabftw
+      DB_PASSWORD: ${DB_PASSWORD}
+      SECRET_KEY: ${SECRET_KEY}
+      SITE_URL: https://localhost:8443
+      PHP_TIMEZONE: Europe/Istanbul
+      TZ: Europe/Istanbul
+      DISABLE_HTTPS: 'false'
+      GENERATE_TLS_CERT: 'true'
+      AUTO_DB_INIT: 'true'
+      USE_OPENCLONING: 'false'
+    ports:
+      - '127.0.0.1:8443:8080'
+    volumes:
+      - uploads:/var/lib/elabftw/uploads
+      - exports:/var/lib/elabftw/exports
+      - cache:/var/cache/elabftw
+volumes:
+  database:
+  uploads:
+  exports:
+  cache:

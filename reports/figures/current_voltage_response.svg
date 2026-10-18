@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="640" height="440" preserveAspectRatio="xMinYMin meet" viewBox="0 0 640 440" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="640" height="440"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-440)" style="clip-path: url(#clip)">
+		<g transform="">
+			<text x="35" y="414" style="font-family: Helvetica-Bold; font-size: 16px;fill: rgb(8%,17%,23%); stroke:none;" transform="translate(0,828) scale(1,-1)">Current-voltage characteristic</text>
+			<text x="35" y="395" style="font-family: Helvetica; font-size: 9px;fill: rgb(32%,38%,42%); stroke:none;" transform="translate(0,790) scale(1,-1)">Current-voltage series from the historical analysis; 20 bias settings.</text>
+			<path d="M 75,377 L 93,377 Z" style="stroke: rgb(9%,41%,60%); stroke-linecap: butt; stroke-width: 2;"/>
+			<text x="98" y="374" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,748) scale(1,-1)">Notebook transcription</text>
+			<g transform="">
+				<g transform="">
+					<g transform="">
+						<path d="M 75,72 L 595,72 Z" style="stroke: rgb(65%,70%,72%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 75,72 L 75,67 Z" style="stroke: rgb(65%,70%,72%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 211.842105,72 L 211.842105,67 Z" style="stroke: rgb(65%,70%,72%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 348.684211,72 L 348.684211,67 Z" style="stroke: rgb(65%,70%,72%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 485.526316,72 L 485.526316,67 Z" style="stroke: rgb(65%,70%,72%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,75,67)">
+							<text x="-2.5020000000000002" y="-9.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-18) scale(1,-1)">0</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,211.842105,67)">
+							<text x="-5.0040000000000004" y="-9.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-18) scale(1,-1)">50</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,348.684211,67)">
+							<text x="-7.505999999999999" y="-9.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-18) scale(1,-1)">100</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,485.526316,67)">
+							<text x="-7.505999999999999" y="-9.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-18) scale(1,-1)">150</text>
+						</g>
+					</g>
+				</g>
+				<g transform="">
+					<g transform="">
+						<path d="M 75,72 L 75,342 Z" style="stroke: rgb(65%,70%,72%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 75,102 L 70,102 Z" style="stroke: rgb(65%,70%,72%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 75,152 L 70,152 Z" style="stroke: rgb(65%,70%,72%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 75,202 L 70,202 Z" style="stroke: rgb(65%,70%,72%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 75,252 L 70,252 Z" style="stroke: rgb(65%,70%,72%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 75,302 L 70,302 Z" style="stroke: rgb(65%,70%,72%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,70,102)">
+							<text x="-5.0040000000000004" y="-3.6000000000000005" style="font-family: Helvetica; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">1</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,70,152)">
+							<text x="-12.510000000000002" y="-3.6000000000000005" style="font-family: Helvetica; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">1.2</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,70,202)">
+							<text x="-12.510000000000002" y="-3.6000000000000005" style="font-family: Helvetica; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">1.4</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,70,252)">
+							<text x="-12.510000000000002" y="-3.6000000000000005" style="font-family: Helvetica; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">1.6</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,70,302)">
+							<text x="-12.510000000000002" y="-3.6000000000000005" style="font-family: Helvetica; font-size: 9px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,-7) scale(1,-1)">1.8</text>
+						</g>
+					</g>
+				</g>
+				<path d="M 75,102 L 595,102 Z" style="stroke: rgb(88%,90%,92%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 75,152 L 595,152 Z" style="stroke: rgb(88%,90%,92%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 75,202 L 595,202 Z" style="stroke: rgb(88%,90%,92%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 75,252 L 595,252 Z" style="stroke: rgb(88%,90%,92%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<path d="M 75,302 L 595,302 Z" style="stroke: rgb(88%,90%,92%); stroke-linecap: butt; stroke-width: 0.25;"/>
+				<g transform="">
+					<polyline points="75 72, 102.3684 72, 129.7368 114.5, 157.1053 152, 184.4737 189.5, 211.8421 227, 239.2105 262, 266.5789 289.5, 293.9474 314.5, 321.3158 339.5, 348.6842 342, 376.0526 342, 403.4211 342, 430.7895 342, 458.1579 342, 485.5263 342, 512.8947 342, 540.2632 342, 567.6316 342, 595 342" style="stroke: rgb(9%,41%,60%); stroke-linecap: round; stroke-width: 1.5; fill: None; fill-rule: evenodd;"/>
+				</g>
+			</g>
+			<text x="300.29" y="30" style="font-family: Times-Roman; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,60) scale(1,-1)">Detector bias (V)</text>
+			<g transform=" matrix(0,1,-1,0,20,207)">
+				<text x="-63.305" y="0" style="font-family: Times-Roman; font-size: 10px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,0) scale(1,-1)">Leakage current (microampere)</text>
+			</g>
+			<text x="35" y="8" style="font-family: Times-Roman; font-size: 7px;fill: rgb(39%,45%,50%); stroke:none;" transform="translate(0,16) scale(1,-1)">Silicon-strip laboratory measurements</text>
+		</g>
+	</g>
+</svg>

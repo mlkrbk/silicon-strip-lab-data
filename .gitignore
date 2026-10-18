@@ -1,0 +1,34 @@
+# Local reference material is not part of the public repository.
+references/local/
+metadata/local/
+# Runtime and editor artifacts.
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+.venv/
+venv/
+.env
+.env.*
+# Private mappings, archives and unreviewed binaries.
+*private*
+*source_mapping*
+*.zip
+*.so
+*.dylib
+
+.env
+*.env
+runtime/
+*.pem
+*.key
+*.sql
+
+# Source measurements and local processing stay outside the public release.
+data/source/
+local/
+
+!.env.example
+
+# Generated check reports.
+reports/*.json
