@@ -17,12 +17,32 @@ The work combines source selection, metadata, quality checks, reproducible proce
 
 The repository includes aggregate results and figures; source measurements are not included. Sample sizes and interpretation are described in the workflow guide.
 
+## Run the public synthetic demonstration
+
+```bash
+python3 scripts/run_demo.py
+```
+
+Python 3.9 or later; no additional packages required. This generates reproducible
+pedestal and charge-injection measurements for 32 **simulated** channels, checks
+integrity and completeness, fits calibration gains with standard errors, and
+produces scientific QC reports in `demo_output/qc_report.md` and
+`demo_output/qc_report.json`. The default seed deliberately introduces elevated
+pedestal noise in channel 31; it should be the only channel flagged as a warning.
+
+Generated inputs and outputs stay in the Git-ignored `demo_output/` directory,
+separate from authentic laboratory results. These example CSVs do not reproduce
+the complete original instrument exports. See [scientific methods](docs/scientific_methods.md)
+for simulation assumptions, configurable thresholds, exit codes and uncertainty
+limitations. No validated inverse ADC-to-energy calibration is claimed.
+
 ## Run checks
 
 Python 3.9 or later; the checks use only the standard library.
 
 ```bash
 python3 scripts/validate_project.py
+python3 scripts/run_demo.py
 python3 -m unittest discover -s tests -v
 python3 scripts/preserve_package.py --self-test
 python3 scripts/check_repository.py

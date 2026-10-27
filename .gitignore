@@ -32,3 +32,6 @@ local/
 
 # Generated check reports.
 reports/*.json
+
+# Generated synthetic measurements and QC reports.
+demo_output/
